@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohinth V | Web Developer</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="scroll-progress"></div>
+    
+    <header id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">R<span>V</span>.</a>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button id="theme-toggle"><i class="fa-solid fa-sun"></i></button>
+                <div class="hamburger">
+                    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="gradient-blob shape-1"></div>
+            <div class="gradient-blob shape-2"></div>
+            <div class="hero-content reveal">
+                <h2 class="greeting">Hello, I'm</h2>
+                <h1 class="name">Rohinth V</h1>
+                <h3 class="title">I'm a <span id="typing-text"></span><span class="cursor">&nbsp;</span></h3>
+                <p class="description">Entry-level Python Developer with a strong foundation in Core Python, MySQL, and web technologies. Passionate about building real-world applications and continuously learning new technologies.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Contact Me</a>
+                    <a href="assets/Rohinth_resume_updated__.pdf" class="btn btn-outline" download="Rohinth_resume_updated__.pdf">Download Resume <i class="fa-solid fa-download"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="section-container">
+                <h2 class="section-title reveal">About <span>Me</span></h2>
+                <div class="about-content reveal delay-1">
+                    <div class="about-card glassmorphism">
+                        <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h3>Education</h3>
+                        <p><strong>B.Tech in AI & Data Science</strong></p>
+                        <p class="years">2021&ndash;2025</p>
+                        <p class="cgpa">CGPA: <span class="highlight">8.11</span></p>
+                    </div>
+                    <div class="about-text">
+                        <p>I am a passionate developer with a keen interest in problem-solving and creating impactful experiences. My skills span backend logic with Python to frontend designs.</p>
+                        <p>I thrive on building real-world applications and always eagerly learn new technologies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <div class="section-container">
+                <h2 class="section-title reveal">My <span>Skills</span></h2>
+                <div class="skills-grid">
+                    <div class="skill-category glassmorphism reveal delay-1">
+                        <h3>Programming</h3>
+                        <div class="skill-list">
+                            <div class="skill-item"><span>Python</span><div class="progress-bar-wrap"><div class="progress-bar" data-progress="90%"></div></div></div>
+                            <div class="skill-item"><span>SQL</span><div class="progress-bar-wrap"><div class="progress-bar" data-progress="85%"></div></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-category glassmorphism reveal delay-2">
+                        <h3>Web Tech</h3>
+                        <div class="skill-list">
+                            <div class="skill-item"><span>HTML/CSS</span><div class="progress-bar-wrap"><div class="progress-bar" data-progress="90%"></div></div></div>
+                            <div class="skill-item"><span>JavaScript</span><div class="progress-bar-wrap"><div class="progress-bar" data-progress="80%"></div></div></div>
+                            <div class="skill-item"><span>React.js</span><div class="progress-bar-wrap"><div class="progress-bar" data-progress="75%"></div></div></div>
+                            <div class="skill-item"><span>Bootstrap</span><div class="progress-bar-wrap"><div class="progress-bar" data-progress="75%"></div></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-category glassmorphism reveal delay-3">
+                        <h3>Tools</h3>
+                        <div class="skill-list">
+                            <div class="skill-item"><span>MySQL</span><div class="progress-bar-wrap"><div class="progress-bar" data-progress="85%"></div></div></div>
+                            <div class="skill-item"><span>VS Code</span><div class="progress-bar-wrap"><div class="progress-bar" data-progress="95%"></div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="section-container">
+                <h2 class="section-title reveal">Featured <span>Projects</span></h2>
+                <div class="projects-grid">
+                    <div class="project-card glassmorphism reveal delay-1">
+                        <div class="project-content">
+                            <div class="project-top">
+                                <i class="fa-solid fa-shield-halved icon"></i>
+                                <div class="project-links">
+                                    <a href="https://github.com/Rohinth-Vijayaragunathan/Deepfake-Detection-Using-CNN" class="icon-link" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                            <h3 class="project-title">Deepfake Detection</h3>
+                            <p class="project-desc">MobileNetV2 & EfficientNetB0, Ensemble techniques, Grad-CAM, Gradio.</p>
+                            <ul class="tech-stack"><li>Python</li><li>Deep learning</li></ul>
+                        </div>
+                    </div>
+
+                    <div class="project-card glassmorphism reveal delay-2">
+                        <div class="project-content">
+                            <div class="project-top">
+                                <i class="fa-solid fa-cloud-sun icon"></i>
+                                <div class="project-links">
+                                    <a href="https://rohinth-vijayaragunathan.github.io/Weather-App-Using-HTML-CSS-and-JavaScript/" class="icon-link" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    <a href="https://github.com/Rohinth-Vijayaragunathan/Weather-App-Using-HTML-CSS-and-JavaScript.git" class="icon-link" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                            <h3 class="project-title">Weather App</h3>
+                            <p class="project-desc">HTML, CSS, JavaScript, Real-time weather API, Error handling.</p>
+                            <ul class="tech-stack"><li>HTML/CSS</li><li>JS</li></ul>
+                        </div>
+                    </div>
+
+                    <div class="project-card glassmorphism reveal delay-3">
+                        <div class="project-content">
+                            <div class="project-top">
+                                <i class="fa-solid fa-list-check icon"></i>
+                                <div class="project-links">
+                                    <a href="https://todo-list-using-react-js-git-main-rohinth2303-8868s-projects.vercel.app/" class="icon-link" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    <a href="https://github.com/Rohinth-Vijayaragunathan/TodoList-using-React.Js.git" class="icon-link" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                            <h3 class="project-title">To-Do List</h3>
+                            <p class="project-desc">React Hooks (useState), Add/Delete/Reorder tasks, Responsive UI.</p>
+                            <ul class="tech-stack"><li>React</li></ul>
+                        </div>
+                    </div>
+
+                    <div class="project-card glassmorphism reveal delay-4">
+                        <div class="project-content">
+                            <div class="project-top">
+                                <i class="fa-solid fa-film icon"></i>
+                                <div class="project-links">
+                                    <a href="https://movie-app-using-react-js-rohinth2303-8868s-projects.vercel.app/" class="icon-link" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    <a href="https://github.com/Rohinth-Vijayaragunathan/Movie-app-using-React.Js.git" class="icon-link" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                            <h3 class="project-title">Movie App</h3>
+                            <p class="project-desc">API integration, Context API, Favorites stored in localStorage.</p>
+                            <ul class="tech-stack"><li>React</li></ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="section-container">
+                <h2 class="section-title reveal">Get In <span>Touch</span></h2>
+                <div class="contact-container reveal delay-1">
+                    <form id="contact-form" class="contact-form glassmorphism" novalidate>
+                        <div class="form-group"><input type="text" id="name" placeholder="Name" required></div>
+                        <div class="form-group"><input type="email" id="email" placeholder="Email" required></div>
+                        <div class="form-group"><textarea id="message" rows="5" placeholder="Message" required></textarea></div>
+                        <button type="submit" class="btn btn-primary submit-btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                        <div id="form-status" class="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links-footer">
+                <a href="https://github.com/Rohinth-Vijayaragunathan" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/rohinth-vijayaragunathan-58a442267" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:rohinth2303@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+    <button id="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
